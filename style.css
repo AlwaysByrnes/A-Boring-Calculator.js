@@ -1,0 +1,44 @@
+:root{
+    --bg-color: rgb(83, 139, 121);
+    --hover-color: aquamarine;
+    --container-color: linear-gradient(aquamarine,rgb(127, 164, 170),rgb(45, 48, 49));
+    --input-color: rgba(252, 252, 252, 0.788);
+    --screen-color: rgba(29, 206, 212, 0.329);
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4rem;
+}
+
+body{
+    background-color: var(--bg-color);
+    padding: 30px;
+
+}
+input{
+   cursor: pointer;
+   background: var(--input-color);
+   border-radius: 20px 10px;
+   
+}
+
+input:hover{
+    background-color: var(--hover-color);
+}
+
+.screen{
+    background-color: var(--screen-color);
+    text-align: right;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 7% 3% 3% 3% 3%;
+    gap: 10px;
+    background: var(--container-color);
+    text-align: center;
+    border-radius: 10px;
+    
+}
